@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/emre/PycharmProjects/CarND-LeNet-Lab'
+let g:netrw_dirhist_2='/home/emre/PycharmProjects/tensorflow-without-a-phd'
+let g:netrw_dirhist_3='/home/emre/PycharmProjects/CarND-LeNet-Lab'
+let g:netrw_dirhist_4='/home/emre/Documents/KGYS.CognitiveCamera/KGYS'
