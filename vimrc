@@ -16,8 +16,27 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins
 
 Plug 'junegunn/seoul256.vim' 
-Plug '~/.vim/plugged/youcompleteme'
 Plug 'scrooloose/nerdtree'
+Plug 'https://github.com/Valloric/YouCompleteMe/'
+
+" The *g:ycm_autoclose_preview_window_after_completion* option:
+" When this option is set to '1', YCM will auto-close the 'preview' window after
+" the user accepts the offered completion string. If there is no 'preview' window
+" triggered because there is no 'preview' string in 'completeopt', this option is
+" irrelevant. See the |g:ycm_add_preview_to_completeopt| option for more details.
+
+" Default: '0'
+let g:ycm_autoclose_preview_window_after_completion = 1
+"-------------------------------------------------------------------------------
+" The *g:ycm_autoclose_preview_window_after_insertion* option:
+" When this option is set to '1', YCM will auto-close the 'preview' window after
+" the user leaves insert mode. This option is irrelevant if
+" |g:ycm_autoclose_preview_window_after_completion| is set or if no 'preview'
+" window is triggered. See the |g:ycm_add_preview_to_completeopt| option for more
+" details.
+
+" Default: '0'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 
 call plug#end()
