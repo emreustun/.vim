@@ -17,7 +17,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim' 
 Plug 'scrooloose/nerdtree'
-Plug 'https://github.com/Valloric/YouCompleteMe/'
+"Plug 'https://github.com/Valloric/YouCompleteMe/'
+Plug 'davidhalter/jedi-vim'
+
+" Change YCM config file directory and set a global one.
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " The *g:ycm_autoclose_preview_window_after_completion* option:
 " When this option is set to '1', YCM will auto-close the 'preview' window after
@@ -38,7 +42,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Default: '0'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-
 call plug#end()
 
 filetype plugin indent on " Filetype auto-detection
@@ -53,6 +56,12 @@ set ruler           " Show the cursor position all the time.
 set showmatch       " Highlight matching braces.
 
 set showmode        " Show insert/replace/visual mode.
+
+set splitbelow      " When on, splitting a window will put the new window below
+                    " the current one
+
+set splitright      " When on, splitting a window will put the new window right
+                    " the current one
 
 noremap <F12> :set list!<CR>
 inoremap <F12> <Esc>:set list!<CR>a
