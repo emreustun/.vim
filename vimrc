@@ -162,10 +162,11 @@ map <F7> ==
                     " Map F7 to AUTO-INDENT current line.
 
 
+
 "------------------------------------------------------------
 " MAPPINGS
 
-map Y y$
+noremap Y y$
                     " Map Y to act like D and C, i.e.
                     " to yank until EOL, rather than 
                     " act as yy, which is the default
@@ -182,3 +183,11 @@ nnoremap gV `[v`]
 noremap n nzz
 noremap N Nzz
                     " center view on the search result
+
+noremap <silent> <C-k> :s#^#\##<cr>:noh<cr>
+                    " Map Ctrl-k for commenting the line
+                    " in Visual Mode
+
+noremap <silent> <C-u> :s#^\###<cr>:noh<cr>
+                    " Map Ctrl-u for commenting the line
+                    " in Visual Mode
