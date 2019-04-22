@@ -17,8 +17,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim' 
 Plug 'scrooloose/nerdtree'
-"Plug 'https://github.com/Valloric/YouCompleteMe/'
-Plug 'davidhalter/jedi-vim'
+Plug '~/.vim/plugged/YouCompleteMe/'
+"Plug 'davidhalter/jedi-vim'
 
 " Change YCM config file directory and set a global one.
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
@@ -156,7 +156,7 @@ set nostartofline   " Stop certain movements from always
                     " going to the first character of 
                     " a line.
 
-set textwidth=80    " Wrap lines automatically at 80th column
+"set textwidth=80    " Wrap lines automatically at 80th column
 
 map <F7> ==         
                     " Map F7 to AUTO-INDENT current line.
@@ -166,6 +166,10 @@ map <F7> ==
 "------------------------------------------------------------
 " MAPPINGS
 
+noremap <C-Up> 5<Up>
+noremap <C-Down> 5<Down>
+                    " Map Ctrl-Up & Ctrl-Dwon for 
+                    " fast movement
 noremap Y y$
                     " Map Y to act like D and C, i.e.
                     " to yank until EOL, rather than 
