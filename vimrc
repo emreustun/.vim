@@ -15,6 +15,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 " Declare the list of plugins
 
+Plug 'vim-scripts/indentpython.vim'
 Plug 'junegunn/seoul256.vim' 
 Plug 'scrooloose/nerdtree'
 Plug '~/.vim/plugged/YouCompleteMe/'
